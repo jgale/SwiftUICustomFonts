@@ -5,12 +5,25 @@
 //  Created by Jeremy Gale on 03/09/22.
 //
 
+import DesignSystem
 import SwiftUI
+import FeatureModule
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 20) {
+                Text("Hello, world!")
+                    .font(.largeTitleCustom)
+
+                Text("This is in the main target")
+                    .font(.bodyCustom)
+
+                NavigationLink("Display Feature Module View") {
+                    ModuleView()
+                }
+            }
+        }
     }
 }
 

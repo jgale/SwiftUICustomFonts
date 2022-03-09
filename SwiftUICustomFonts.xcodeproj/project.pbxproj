@@ -11,6 +11,8 @@
 		35A6830327D953050015A828 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6830227D953050015A828 /* ContentView.swift */; };
 		35A6830527D953050015A828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6830427D953050015A828 /* Assets.xcassets */; };
 		35A6830827D953050015A828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6830727D953050015A828 /* Preview Assets.xcassets */; };
+		35DE897D27D9595200B6FEBF /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 35DE897C27D9595200B6FEBF /* DesignSystem */; };
+		35DE897F27D9595200B6FEBF /* FeatureModule in Frameworks */ = {isa = PBXBuildFile; productRef = 35DE897E27D9595200B6FEBF /* FeatureModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		35A6830227D953050015A828 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35A6830427D953050015A828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A6830727D953050015A828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35DE897A27D955AB00B6FEBF /* CustomFontsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CustomFontsPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35DE897D27D9595200B6FEBF /* DesignSystem in Frameworks */,
+				35DE897F27D9595200B6FEBF /* FeatureModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +40,10 @@
 		35A682F427D953050015A828 = {
 			isa = PBXGroup;
 			children = (
+				35DE897927D955AB00B6FEBF /* Packages */,
 				35A682FF27D953050015A828 /* SwiftUICustomFonts */,
 				35A682FE27D953050015A828 /* Products */,
+				35DE897B27D9595200B6FEBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		35DE897927D955AB00B6FEBF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				35DE897A27D955AB00B6FEBF /* CustomFontsPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		35DE897B27D9595200B6FEBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +105,10 @@
 			dependencies = (
 			);
 			name = SwiftUICustomFonts;
+			packageProductDependencies = (
+				35DE897C27D9595200B6FEBF /* DesignSystem */,
+				35DE897E27D9595200B6FEBF /* FeatureModule */,
+			);
 			productName = SwiftUICustomFonts;
 			productReference = 35A682FD27D953050015A828 /* SwiftUICustomFonts.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +367,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35DE897C27D9595200B6FEBF /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
+		35DE897E27D9595200B6FEBF /* FeatureModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35A682F527D953050015A828 /* Project object */;
 }
