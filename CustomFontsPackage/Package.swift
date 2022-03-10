@@ -1,5 +1,4 @@
 // swift-tools-version:5.5
-// swiftlint:disable:previous file_header
 
 import PackageDescription
 

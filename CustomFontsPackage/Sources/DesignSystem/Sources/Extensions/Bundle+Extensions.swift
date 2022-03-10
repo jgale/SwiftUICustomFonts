@@ -1,16 +1,6 @@
 import UIKit
 
 extension Bundle {
-
-    func loadViewFromNibNamed(
-        _ nibName: String,
-        owner: Any,
-        options: [UINib.OptionsKey: Any]? = nil
-    ) -> UIView? {
-
-        loadNibNamed(nibName, owner: owner, options: options)?.first as? UIView
-    }
-
     private class CurrentBundleFinder {}
 
     /// This is used to allow you to use resources from DesignSystem in other Swift Package previews.
