@@ -5,7 +5,7 @@ public struct LogoView: View {
 
     public var body: some View {
         VStack {
-            Image("logo", bundle: .designSystem)
+            Image("logo", bundle: .module)
                 .resizable()
                 .frame(width: 80, height: 80)
             

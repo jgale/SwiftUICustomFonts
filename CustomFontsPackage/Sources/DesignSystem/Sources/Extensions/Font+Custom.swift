@@ -17,7 +17,7 @@ extension Font {
 public enum CustomFonts {
     public static func registerCustomFonts() {
         for font in ["SyneMono-Regular.ttf", "Lobster-Regular.ttf"] {
-            guard let url = Bundle.designSystem.url(forResource: font, withExtension: nil) else { return }
+            guard let url = Bundle.module.url(forResource: font, withExtension: nil) else { return }
             CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
         }
     }
