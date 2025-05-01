@@ -9,8 +9,9 @@ public struct ModuleView: View {
             Text("Hello, Module!")
                 .font(.largeTitleCustom)
 
-            Text("This is in FeatureModule module. It is using custom fonts and LogoView from a different module, but the Xcode Preview works!")
+            Text("This is in FeatureModule module. It is using custom fonts, colors, and LogoView from a different module, but the Xcode Preview works!")
                 .font(.bodyCustom)
+                .foregroundStyle(Color.brandPrimary)
                 .multilineTextAlignment(.center)
 
             LogoView()
